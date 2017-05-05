@@ -1,0 +1,1203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+
+	<title>BPIT FORUM</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+	<link rel="stylesheet" type="text/css" href="css/forumhome-rollup.css" />
+    <link rel="stylesheet" type="text/css" href="css/main-rollup.css" />
+	<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+	<link rel="stylesheet" type="text/css" href="css/widgets.css" />
+	<link rel="stylesheet" type="text/css" href="css/tagcloud.css" />
+
+
+	<!-- this scripts is used only in preview -->
+	<script src="scripts/jquery.js" type="text/javascript"></script>
+	<script src="scripts/script.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="above_body">
+
+	<div id="header" class="floatcontainer doc_header">
+
+		<a name="top" href="#" class="logo-image"><img src="images/logos/logo.png" alt="Logo" /></a>
+
+		<div id="toplinks" class="toplinks">
+
+			<ul class="isuser">
+				<li><a href="#">Log Out</a></li>
+				<li><a href="#">Settings</a></li>
+				<li class="popupmenu notifications" id="notifications">
+
+					<a class="popupctrl" href="#">Notifications: <span class="notifications-number">16</span></a>
+					<ul class="popupbody popuphover">
+						<li><a href="#"><span>6</span> Unread Private Messages</a></li>
+						<li><a href="#"><span>3</span> Unapproved Visitor Messages</a></li>
+						<li><a href="#"><span>1</span> Incoming Friend Requests</a></li>
+						<li><a href="#"><span>1</span> Groups Join Requests</a></li>
+						<li><a href="#"><span>1</span> Group Invitations</a></li>
+						<li><a href="#"><span>3</span> Picture Comments Approval</a></li>
+						<li><a href="#"><span>1</span> Unapproved Group Messages</a></li>
+					</ul>
+
+				</li>
+				<li class="welcomelink">Welcome, <a href="#">User</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div id="navbar" class="navbar">
+
+		<ul id="navtabs" class="navtabs floatcontainer">
+
+			<li class="selected" id="vbtab_forum">
+				<a class="navtab" href="#">Forum</a>
+
+				<ul class="floatcontainer">
+
+					<li id="vbflink_newposts"><a href="#">New Posts</a></li>
+					<li id="vbflink_pms"><a href="#">Private Messages</a></li>
+					<li id="vbflink_faq"><a href="#">FAQ</a></li>
+					<li id="vbflink_calendar"><a href="#">Calendar</a></li>
+
+					<li class="popupmenu" id="vbmenu_community">
+
+						<a href="#" class="popupctrl">Community</a>
+						<ul class="popupbody popuphover">
+							<li id="vbclink_groups"><a href="#">Groups</a></li>
+							<li id="vbclink_albums"><a href="#">Albums</a></li>
+							<li id="vbclink_contacts"><a href="#">Friends &amp; Contacts</a></li>
+							<li id="vbclink_members"><a href="#">Member List</a></li>
+						</ul>
+
+					</li>
+
+					<li class="popupmenu" id="vbmenu_actions">
+
+						<a href="#" class="popupctrl">Forum Actions</a>
+						<ul class="popupbody popuphover">
+							<li id="vbalink_mfr"><a href="#">Mark Forums Read</a></li>
+							<li id="vbalink_settings"><a href="#">General Settings</a></li>
+							<li id="vbalink_profile"><a href="#">Edit Profile</a></li>
+						</ul>
+
+					</li>
+
+					<li class="popupmenu" id="vbmenu_qlinks">
+
+						<a href="#" class="popupctrl">Quick Links</a>
+						<ul class="popupbody popuphover">
+							<li id="vbqlink_posts"><a href="#">Today's Posts</a></li>
+							<li id="vbqlink_threads"><a href="#">Subscribed Threads</a></li>
+							<li id="vbqlink_contacts"><a href="#">Open Contacts Popup</a></li>
+							<li id="vbqlink_leaders"><a href="#">View Site Leaders</a></li>
+							<li id="vbqlink_online"><a href="#">Who's Online</a></li>
+						</ul>
+
+					</li>
+
+				</ul>
+
+			</li>
+
+			<li id="vbtab_whatsnew">
+				<a class="navtab" href="#">What's New?</a>
+			</li>
+
+		</ul>
+
+		<div id="globalsearch" class="globalsearch">
+
+			<form action="#" method="post" id="navbar_search" class="navbar_search">
+				<input type="text" value="Search" name="query" class="textbox" tabindex="99" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}" />
+				<input type="image" class="searchbutton" src="images/search.png" name="submit" alt="Search" tabindex="100" />
+			</form>
+
+			<ul class="navbar_advanced_search">
+				<li><a href="#">Advanced Search</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="body_wrapper">
+
+	<div id="breadcrumb" class="breadcrumb">
+
+		<ul class="floatcontainer">
+			<li class="navbithome"><a href="#"><img src="images/home.png" alt="Home" /></a></li>
+			<li class="navbit lastnavbit"><span>Forum</span></li>
+		</ul>
+
+	</div>
+
+	<form action="#" method="post" id="notices" class="notices">
+		<ol>
+			<li class="restore">
+				<img onclick="$('#notices').remove();" style="float:right;cursor:pointer;" src="images/cross-small.png" alt="Dismiss" />
+				If this is your first visit, be sure to check out the <a href="#" target="_blank"><b>FAQ</b></a> by clicking the link above. You may have to <a href="#" target="_blank"><b>register</b></a> before you can post: click the register link above to proceed. To start viewing messages, select the forum that you want to visit from the selection below.
+			</li>
+		</ol>
+	</form>
+
+	<div id="pagetitle">
+
+		<h1>BPIT FORUM</h1>
+		<p id="welcomemessage" class="description">Welcome to the BPIT Official Forum.</p>
+
+	</div>
+
+	<div id="content_container">
+
+		<div id="content">
+
+			<ol id="forums">
+
+				<li class="forumbit_nopost old_lock L1" id="cat1">
+
+					<div class="forumhead L1 collapse">
+
+						<h2 class="table">
+							<span class="forumtitle td"><a href="#">Exclusive Posts</a></span>
+							<span class="forumlastpost td">Last Post <a class="collapse" id="collapse_c_cat1" href="#" title="Collapse/Expand"><img src="images/blockhead.png" alt="" /></a></span>
+						</h2>
+
+					</div>
+
+					<div class="forumrowdata">
+						<p class="subforumdescription">Our teachers &amp; alumni writes here.</p>
+					</div>
+
+					<ol id="c_cat1" class="childforum">
+
+						<li id="forum2" class="forumbit_post old L2">
+
+							<div class="forumrow table">
+
+								<div class="foruminfo td">
+
+									<h2 class="forumtitle"><img src="images/status/forum_new.png" class="forumicon" id="forum_statusicon_2" alt="" />
+									<a href="#">HTML &amp; CSS</a></h2>
+									<p class="forumdescription">HTML &amp; CSS related discussions and questions.</p>
+
+								</div>
+
+								<div class="forumactionstats td">
+
+									<h4 class="nocss_label">Forum Actions:</h4>
+									<ul class="forumactionlinks table">
+										<li class="forumactionlink subslink td"><a href="#" title="Subscribe to This Forum">Subscribe to This Forum</a></li>
+										<li class="forumactionlink rsslink td"><a href="#" title="View this forum's RSS feed">View this forum's RSS feed</a></li>
+									</ul>
+
+									<h4 class="nocss_label">Forum Statistics:</h4>
+									<ul class="forumstats table">
+										<li class="threads td">Threads: 3</li>
+										<li class="posts td">Posts: 6</li>
+									</ul>
+
+								</div>
+
+								<div class="forumlastpost td">
+
+									<h4 class="lastpostlabel">Last Post:</h4>
+
+									<div class="lastpostinfo table">
+
+										<p class="lastpostdate td">4 Weeks Ago</p>
+
+										<p class="lastpostlink td"><a href="#" title="Go to last post">Go to last post</a></p>
+										<div class="lastpostby unregister td">
+										 <div class="popupmenu memberaction">
+
+											<a class="username offline popupctrl" href="#" title="Unregistered is offline"><strong>Unregistered</strong></a>
+											<ul class="popupbody popuphover memberaction_body">
+												<li class="left"><a href="#" class="siteicon_profile">View Profile</a></li>
+												<li class="right"><a href="#" class="siteicon_forum" rel="nofollow">View Forum Posts</a></li>
+											</ul>
+
+										 </div>
+										</div>
+
+									</div>
+
+									<p class="lastposttitle"><a href="#" class="threadtitle" title="Go to first unread post in thread 'How to make text to scroll from left to right within a given area?'">How to make text to scroll...</a></p>
+
+								</div>
+
+							</div>
+
+							<div class="forumrow subrow table">
+
+								<div class="subforums td">
+
+									<h4 class="subforumlistlabel">Sub-Forums:</h4>
+
+									<ol class="subforumlist commalist">
+										<li class="subforum">
+											<img class="inlineimg" src="images/status/subforum_old.png" alt="" /> 
+											<a href="#">XML</a>
+										</li>
+									</ol>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li id="forum4" class="forumbit_post old L2">
+
+							<div class="forumrow table">
+
+								<div class="foruminfo td">
+
+									<h2 class="forumtitle">
+										<img src="images/status/forum_old.png" class="forumicon" alt="" />
+										<a href="#">Web Programming</a>
+									</h2>
+
+									<p class="forumdescription">PHP, Perl, JavaScript</p>
+
+									<div class="moderators">
+
+										<h4>Moderators:</h4>
+										<ol class="commalist">
+											<li><a class="username" href="#">A</a>, </li>
+											<li><a class="username" href="#">B</a>, </li>
+											<li><a class="username" href="#">C</a>, </li>
+											<li><a class="username" href="#">D</a></li>
+										</ol>
+
+									</div>
+
+								</div>
+
+								<div class="forumactionstats td">
+
+									<h4 class="nocss_label">Forum Actions:</h4>
+									<ul class="forumactionlinks table">
+										<li class="forumactionlink unsubslink td"> <a href="#" title="Unsubscribe from this Forum">Unsubscribe from this Forum</a></li>
+										<li class="forumactionlink rsslink td"><a href="#" title="View this forum's RSS feed">View this forum's RSS feed</a></li>
+									</ul>
+
+									<h4 class="nocss_label">Forum Statistics:</h4>
+									<ul class="forumstats viewing table">
+										<li class="threads td">Threads: 17</li>
+										<li class="posts td">Posts: 68</li>
+										<li class="browsers td">5 Viewing</li>
+									</ul>
+
+								</div>
+
+								<div class="forumlastpost td">
+
+									<h4 class="lastpostlabel">Last Post:</h4>
+
+									<div class="lastpostinfo table">
+
+										<p class="lastpostdate td">1 Minute Ago</p>
+										<p class="lastpostlink td"><a href="#" title="Go to last post">Go to last post</a></p>
+
+										<div class="lastpostby td">
+										 <div class="popupmenu memberaction">
+
+											<a class="username online popupctrl" href="#" title="Administrator is online now"><strong>Administrator</strong></a>
+											<ul class="popupbody popuphover memberaction_body">
+												<li class="left"><a href="#" class="siteicon_profile">View Profile</a></li>
+												<li class="right"><a href="#" class="siteicon_forum" rel="nofollow">View Forum Posts</a></li>
+												<li class="left"><a href="#" class="siteicon_message" rel="nofollow">Private Message</a></li>
+												<li class="right"><a href="#" class="siteicon_email">Send Email</a></li>
+											</ul>
+
+										 </div>
+										</div>
+
+									</div>
+
+									<p class="lastposttitle"><span class="prefix"><b>[Prefix]</b></span> <a href="#" class="threadtitle" title="String out of bounds error...">String out of bounds error...</a></p>
+
+								</div>
+
+							</div>
+
+							<div class="forumrow subrow table">
+
+								<div class="subforums td">
+
+									<h4 class="subforumlistlabel">Sub-Forums:</h4>
+
+									<ol class="subforumlist commalist">
+
+										<li class="subforum">
+											<img class="inlineimg" src="images/status/subforum_old.png" alt="" /> 
+											<a href="#">PHP Forum</a>, 
+										</li>
+
+										<li class="subforum">
+											<img class="inlineimg" src="images/status/subforum_old.png" alt="" /> 
+											<a href="#">JavaScript</a>, 
+										</li>
+
+										<li class="subforum">
+											<img class="inlineimg" src="images/status/subforum_old.png" alt="" /> 
+											<a href="#">Perl Forum</a>, 
+										</li>
+
+										<li class="subforum">
+											<img class="inlineimg" src="images/status/subforum_link.png" alt="" /> 
+											<a href="#">Forum Link</a>
+										</li>
+
+									</ol>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li id="forum11" class="forumbit_post old L2">
+
+							<div class="forumrow table">
+
+								<div class="foruminfo td">
+
+									<h2 class="forumtitle">
+										<img src="images/status/forum_old.png" class="forumicon" alt="" />
+										<a href="#">Graphic Design</a>
+									</h2>
+
+									<div class="moderators">
+
+										<h4>Moderators:</h4>
+										<ol class="commalist">
+											<li><a class="username" href="#">EE</a></li>
+										</ol>
+
+									</div>
+
+								</div>
+
+								<div class="forumactionstats td">
+
+									<h4 class="nocss_label">Forum Actions:</h4>
+									<ul class="forumactionlinks table">
+										<li class="forumactionlink subslink td"> <a href="#" title="Subscribe to This Forum">Subscribe to This Forum</a></li>
+										<li class="forumactionlink rsslink td"><a href="#" title="View this forum's RSS feed">View this forum's RSS feed</a></li>
+									</ul>
+
+									<h4 class="nocss_label">Forum Statistics:</h4>
+									<ul class="forumstats table">
+										<li class="threads td">Threads: 4</li>
+										<li class="posts td">Posts: 5</li>
+									</ul>
+
+								</div>
+
+								<div class="forumlastpost td">
+
+									<h4 class="lastpostlabel">Last Post:</h4>
+
+									<div class="lastpostinfo table">
+
+										<p class="lastpostdate td">1 Week Ago</p>
+										<p class="lastpostlink td"><a href="#" title="Go to last post">Go to last post</a></p>
+
+										<div class="lastpostby td">
+										 <div class="popupmenu memberaction">
+
+											<a class="username online popupctrl" href="#" title="JJ is online now"><strong>JJ</strong></a>
+											<ul class="popupbody popuphover memberaction_body">
+												<li class="left"><a href="#" class="siteicon_profile">View Profile</a></li>
+												<li class="right"><a href="#" class="siteicon_forum" rel="nofollow">View Forum Posts</a></li>
+												<li class="left"><a href="#" class="siteicon_message" rel="nofollow">Private Message</a></li>
+												<li class="left"><a href="#" class="siteicon_homepage">Visit Homepage</a></li>
+												<li class="right"><a href="#" class="siteicon_email">Send Email</a></li>
+											</ul>
+
+										 </div>
+										</div>
+
+									</div>
+
+									<p class="lastposttitle"><a href="#" class="threadtitle" title="Go to first unread post in thread 'How to free slice in photoshop...'">How to free slice in photoshop...</a></p>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li id="forum12" class="forumbit_post old_lock L2">
+
+							<div class="forumrow table">
+
+								<div class="foruminfo td">
+
+									<h2 class="forumtitle">
+										<img src="images/status/forum_old_lock.png" class="forumicon" alt="" />
+										<a href="#">SEO &amp; Advertising</a>
+									</h2>
+
+									<p class="forumdescription">Advertising, SEO, AdSense, AdWords, Link Trades, and more!</p>
+
+								</div>
+
+								<div class="forumactionstats td">
+
+									<h4 class="nocss_label">Forum Statistics:</h4>
+									<ul class="forumstats table">
+										<li class="threads td">Threads: 1</li>
+										<li class="posts td">Posts: 3</li>
+									</ul>
+
+								</div>
+
+								<div class="forumlastpost td">
+
+									<h4 class="lastpostlabel">Last Post:</h4>
+
+									<div class="lastpostinfo table">
+
+										<p class="lastpostdate td">3 Week Ago</p>
+										<p class="lastpostlink td"><a href="#" title="Go to last post">Go to last post</a></p>
+
+										<div class="lastpostby unregister td">
+										 <div class="popupmenu memberaction">
+
+											<a class="username offline popupctrl" href="#" title="Unregistered user is offline"><strong>Unregistered</strong></a>
+											<ul class="popupbody popuphover memberaction_body">
+												<li class="left"><a href="#" class="siteicon_profile">View Profile</a></li>
+												<li class="right"><a href="#" class="siteicon_forum" rel="nofollow">View Forum Posts</a></li>
+											</ul>
+
+										 </div>
+										</div>
+
+									</div>
+
+									<p class="lastposttitle"><a href="#" class="threadtitle" title="Go to first unread post in thread 'Google Adwords Payment'">Google Adwords Payment</a></p>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li id="forum14" class="forumbit_post old_lock L2">
+
+							<div class="forumrow table">
+
+								<div class="foruminfo td">
+
+									<h2 class="forumtitle">
+										<img src="images/status/forum_old_lock.png" class="forumicon" alt="" />
+										<a href="#">Web Servers &amp; Hosting</a>
+									</h2>
+
+									<p class="forumdescription">Apache, IIS, Shared Hosting, Dedicated Hosting, Colocation.</p>
+
+								</div>
+
+								<div class="forumactionstats td">
+
+									<h4 class="nocss_label">Forum Statistics:</h4>
+									<ul class="forumstats viewing table">
+										<li class="threads td">Threads: 8</li>
+										<li class="posts td">Posts: 45</li>
+										<li class="browsers td">1 Viewing</li>
+									</ul>
+
+								</div>
+
+								<div class="forumlastpost td">
+
+									<h4 class="lastpostlabel">Last Post:</h4>
+
+									<div class="lastpostinfo table">
+
+										<p class="lastpostdate td">7 Day Ago</p>
+										<p class="lastpostlink td"><a href="#" title="Go to last post">Go to last post</a></p>
+
+										<div class="lastpostby td">
+										 <div class="popupmenu memberaction">
+
+											<a class="username offline popupctrl" href="#" title="GG is offline"><strong>GG</strong></a>
+											<ul class="popupbody popuphover memberaction_body">
+												<li class="left"><a href="#" class="siteicon_profile">View Profile</a></li>
+												<li class="right"><a href="#" class="siteicon_forum" rel="nofollow">View Forum Posts</a></li>
+												<li class="left"><a href="#" class="siteicon_message" rel="nofollow">Private Message</a></li>
+												<li class="left"><a href="#" class="siteicon_add">Add as Contact</a></li>
+											</ul>
+
+										 </div>
+										</div>
+
+									</div>
+
+									<p class="lastposttitle"><a href="#" class="threadtitle" title="Go to first unread post in thread 'Free web hosting'">Free web hosting</a></p>
+
+								</div>
+
+							</div>
+
+						</li>
+
+					</ol>
+
+				</li>
+
+				<li class="forumbit_nopost old L1" id="cat3">
+
+					<div class="forumhead L1 collapse">
+
+						<h2 class="table">
+							<span class="forumtitle td"><a href="#">Disscusion Section</a></span>
+							<span class="forumlastpost td">Last Post <a class="collapse" id="collapse_c_cat3" href="#" title="Collapse/Expand"><img src="images/blockhead.png" alt="" /></a></span>
+						</h2>
+
+					</div>
+
+					<ol id="c_cat3" class="childforum">
+
+						<li id="forum5" class="forumbit_post old L2">
+
+							<div class="forumrow table">
+
+								<div class="foruminfo td">
+
+									<h2 class="forumtitle">
+										<img src="images/status/sign.png" class="forumicon" id="forum_statusicon_5" alt="" />
+										<a href="#">Prefix for Forum Status Images</a>
+									</h2>
+
+									<p class="forumdescription">This prefix will be used on status image filenames for a forum.</p>
+
+								</div>
+
+								<div class="forumactionstats td">
+
+									<h4 class="nocss_label">Forum Actions:</h4>
+									<ul class="forumactionlinks table">
+										<li class="forumactionlink unsubslink td"> <a href="#" title="Unsubscribe from this Forum">Unsubscribe from this Forum</a></li>
+										<li class="forumactionlink rsslink td"><a href="#" title="View this forum's RSS feed">View this forum's RSS feed</a></li>
+									</ul>
+
+									<h4 class="nocss_label">Forum Statistics:</h4>
+									<ul class="forumstats table">
+										<li class="threads td">Threads: 0</li>
+										<li class="posts td">Posts: 0</li>
+									</ul>
+
+								</div>
+
+								<div class="forumlastpost td">
+
+									<h4 class="lastpostlabel">Last Post:</h4>
+									Never
+
+								</div>
+
+							</div>
+
+							<div class="forumrow subrow table">
+
+								<div class="subforums td">
+
+									<h4 class="subforumlistlabel">Sub-Forums:</h4>
+									<ol class="subforumlist commalist">
+										<li class="subforum">
+											<img class="inlineimg" src="images/status/subforum_old.png" alt="" /> 
+											<a href="#">Custom style</a>
+										</li>
+									</ol>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li class="forumbit_nopost old L2">
+
+							<div class="forumrow table">
+
+								<div class="foruminfo td">
+
+									<h2 class="forumtitle">
+										<img src="images/status/category_forum_old.png" class="forumicon" alt="" />
+										<a href="#">Will act as category</a>
+									</h2>
+
+									<p class="forumdescription">That is, a non-posting forum that only exists to group other forums.</p>
+
+								</div>
+
+							</div>
+
+							<div class="forumrow subrow table">
+
+								<div class="subforums td">
+
+									<h4 class="subforumlistlabel">Sub-Forums:</h4>
+
+									<ol class="subforumlist commalist">
+
+										<li class="subforum">
+											<img class="inlineimg" src="images/status/subforum_old.png" alt="" /> 
+											<a href="#">Forum listings display options</a>, 
+										</li>
+
+										<li class="subforum">
+											<img class="inlineimg" src="images/status/subforum_old.png" alt="" id="forum_statusicon_20" /> 
+											<a href="#">This option applies to any forum listing</a>
+										</li>
+
+									</ol>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li id="forum21" class="forumbit_post link L2">
+
+							<div class="forumrow table">
+
+								<div class="foruminfo td">
+
+									<h2 class="forumtitle">
+										<img src="images/status/forum_link.png" class="forumicon" alt="" />
+										<a href="#">Simply be a link</a>
+									</h2>
+
+								</div>
+
+							</div>
+
+						</li>
+
+						<li id="forum6" class="forumbit_post link L2">
+
+							<div class="forumrow table">
+
+								<div class="foruminfo td">
+
+									<h2 class="forumtitle">
+										<img src="images/status/forum_link.png" class="forumicon" alt="" />
+										<a href="#">Forum Link</a>
+									</h2>
+									<p class="forumdescription">The forum not be a real forum</p>
+
+								</div>
+
+							</div>
+
+						</li>
+
+					</ol>
+
+				</li>
+
+				<li id="forum17" class="forumbit_post old L1">
+
+					<div class="forumhead L1">
+
+						<h2 class="table">
+							<span class="forumtitle td">Act as Forum</span>
+							<span class="forumlastpost td">Last Post</span>
+						</h2>
+
+					</div>
+
+					<div class="forumbit_post L2">
+
+						<div class="forumrow table">
+
+							<div class="foruminfo td">
+
+								<h2 class="forumtitle">
+									<img src="images/status/forum_old.png" class="forumicon" alt="" />
+									<a href="#">Exclude From Double Post Merges</a>
+								</h2>
+
+								<p class="forumdescription">Setting this to Yes will prevent doublepost merges in this forum</p>
+
+								<div class="moderators">
+
+									<h4>Moderators:</h4>
+									<ol class="commalist">
+										<li><a class="username" href="#">rr</a></li>
+									</ol>
+
+								</div>
+
+							</div>
+
+							<div class="forumactionstats td">
+
+								<h4 class="nocss_label">Forum Actions:</h4>
+								<ul class="forumactionlinks table">
+									<li class="forumactionlink subslink td"> <a href="#" title="Subscribe to This Forum">Subscribe to This Forum</a></li>
+									<li class="forumactionlink rsslink td"><a href="#" title="View this forum's RSS feed">View this forum's RSS feed</a></li>
+								</ul>
+
+								<h4 class="nocss_label">Forum Statistics:</h4>
+								<ul class="forumstats table">
+									<li class="threads td">Threads: 2</li>
+									<li class="posts td">Posts: 3</li>
+								</ul>
+
+							</div>
+
+							<div class="forumlastpost td">
+
+								<h4 class="lastpostlabel">Last Post:</h4>
+
+								<div class="lastpostinfo table">
+
+									<p class="lastpostdate td">04-15-2012</p>
+									<p class="lastpostlink td"><a href="#" title="Go to last post">Go to last post</a></p>
+
+									<div class="lastpostby unregister td">
+									 <div class="popupmenu memberaction">
+
+										<a class="username offline popupctrl" href="#" title="User is offline"><strong>User</strong></a>
+										<ul class="popupbody popuphover memberaction_body">
+											<li class="left"><a href="#" class="siteicon_profile">View Profile</a></li>
+											<li class="right"><a href="#" class="siteicon_forum" rel="nofollow">View Forum Posts</a></li>
+										</ul>
+
+									 </div>
+									</div>
+
+								</div>
+
+								<p class="lastposttitle"><a href="#" class="threadtitle" title="Go to first unread post in thread 'Flecks of dust in the viewfinder'">Flecks of dust in the viewfinder</a></p>
+
+							</div>
+
+						</div>
+
+						<ol id="childforum_for_17" class="childsubforum">
+
+							<li id="forum18" class="forumbit_post old L2">
+
+								<div class="forumrow table">
+
+									<div class="foruminfo td">
+
+										<h2 class="forumtitle">
+											<img src="images/status/forum_old.png" class="forumicon" id="forum_statusicon_18" alt="" />
+											<a href="#">Child Subforum</a>
+										</h2>
+
+										<p class="forumdescription">Custom style for this forum</p>
+
+									</div>
+
+									<div class="forumactionstats td">
+
+										<h4 class="nocss_label">Forum Actions:</h4>
+										<ul class="forumactionlinks table">
+											<li class="forumactionlink subslink td"><a href="#" title="Subscribe to This Forum">Subscribe to This Forum</a></li>
+											<li class="forumactionlink rsslink td"><a href="#" title="View this forum's RSS feed">View this forum's RSS feed</a></li>
+										</ul>
+
+										<h4 class="nocss_label">Forum Statistics:</h4>
+										<ul class="forumstats table">
+											<li class="threads td">Threads: 0</li>
+											<li class="posts td">Posts: 0</li>
+										</ul>
+
+									</div>
+
+									<div class="forumlastpost td">
+
+										<h4 class="lastpostlabel">Last Post:</h4>
+										Never
+
+									</div>
+
+								</div>
+
+							</li>
+
+						</ol>
+
+					</div>
+
+				</li>
+
+			</ol>
+
+			<div class="navlinks">
+				<a href="#" rel="nofollow">Mark Forums Read</a> | <a href="#" rel="nofollow">View Forum Leaders</a>
+			</div>
+
+			<div id="wgo" class="wgo_block block">
+
+				<h2 class="blockhead">What's Going On?</h2>
+
+				<div class="blockbody formcontrols">
+
+					<div id="wgo_onlineusers" class="wgo_subblock">
+
+						<h3 class="blocksubhead">
+							Currently Active Users 
+							<a class="collapse" id="collapse_wgo_onlineusers_body" href="#" title="Collapse/Expand"><img src="images/blockhead.png" alt="" /></a>
+						</h3>
+
+						<div id="wgo_onlineusers_body">
+
+							<p>There are currently <a href="#">5 users online</a>. <span class="shade">3 members and 2 guests</span></p>
+							<p>Most users ever online was 12, 1 Week Ago at <span class="time">08:54 AM</span>.</p>
+
+							<ol class="commalist" id="wgo_onlineusers_list">
+								<li><a class="username" href="#">MM</a>, </li>
+								<li><a class="username" href="#">SS</a>, </li>
+								<li><a class="username" href="#">AA</a>+</li>
+							</ol>
+
+						</div>
+
+					</div>
+
+					<div id="wgo_wgo_members_users" class="wgo_subblock">
+
+						<h3 class="blocksubhead">
+							Total members that have visited the forum today: 3 <a href="#">View Online Members</a>
+							<a class="collapse" id="collapse_wgo_members_list" href="#" title="Collapse/Expand"><img src="images/blockhead_collapsed.png" alt="" /></a>
+						</h3>
+
+						<div id="wgo_members_list" class="hidden">
+
+							<ul class="commalist" id="wgo_wgo_members_list">
+								<li><a class="username" href="#" title="05:14 PM">Administrator</a>, </li>
+								<li><a class="username" href="#" title="06:08 PM">DD</a>, </li>
+								<li><a class="username" href="#" title="15:43 PM">JJ</a>, </li>
+								<li><a class="username" href="#" title="04:21 PM">JR</a>, </li>
+								<li><a class="username" href="#" title="10:16 AM">MM</a>*</li>
+							</ul>
+
+						</div>
+
+					</div>
+
+					<div id="wgo_stats" class="wgo_subblock">
+
+						<h3 class="blocksubhead">
+							Electronus Statistics
+							<a class="collapse" id="collapse_wgo_stats_body" href="#" title="Collapse/Expand"><img src="images/blockhead.png" alt="" /></a>
+						</h3>
+
+						<div id="wgo_stats_body">
+
+							<ol class="commalist">
+								<li><em>Threads</em> 24</li>
+								<li><em>Posts</em> 85</li>
+								<li><em>Members</em> 15</li>
+								<li><em>Active Members</em> 8</li>
+							</ol>
+
+							<p>Welcome to our newest member, <a href="#">MII</a></p>
+
+						</div>
+
+					</div>
+
+					<div id="wgo_legend" class="wgo_subblock">
+
+						<h3 class="blocksubhead">
+							Icon Legend
+							<a class="collapse" id="collapse_wgo_legend_body" href="#" title="Collapse/Expand"><img src="images/blockhead.png" alt="" /></a>
+						</h3>
+
+						<div id="wgo_legend_body">
+
+							<dl id="icon_legends" class="icon_legends">
+								<dt><img src="images/status/forum_new.png" alt="Contains unread forum posts" /></dt><dd>Contains unread forum posts</dd>
+								<dt><img src="images/status/forum_old.png" alt="Contains no unread forum posts" /></dt><dd>Contains no unread forum posts</dd>
+								<dt><img src="images/status/forum_old_lock.png" alt="Forum is Closed for Posting" /></dt><dd>Forum is Closed for Posting</dd>
+								<dt><img src="images/status/category_forum_old.png" alt="Forum is a category" /></dt><dd>Forum is a category</dd>
+								<dt><img src="images/status/category_forum_link.png" alt="Forum is a Link" /></dt><dd>Forum is a Link</dd>
+							</dl>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="sidebar_container">
+
+		<a id="sidebar_button_link" href="#" onclick="sidebar()"><img id="sidebar_button" src="images/tab-collapsed.gif" alt="" /></a>
+
+		<ul id="sidebar">
+
+			<li>
+
+				<div class="block smaller">
+
+					<div class="blockhead">
+
+						<a class="collapse" id="collapse_block_sgnewdiscussions_5" href="#" title="Collapse/Expand"><img alt="" src="images/blockhead.png" id="collapseimg_sgnewdiscussions_5"/></a>
+						<span class="blocktitle">Group Discussions</span>
+
+					</div>
+
+					<div id="block_sgnewdiscussions_5" class="widget_content blockbody">
+
+						<ul class="blockrow">
+
+							<li class="widget_post_bit">
+
+								<div class="smallavatartext widget_post_comment">
+
+									<div class="meta_date">4 Minute Ago</div>
+									<h5 class="widget_post_header"><a href="#" class="title">Problem overflow</a></h5>
+									<p class="widget_post_content">Does not work overflow in opera.</p>
+									<div class="meta">Last Post By <a href="#">FF</a> <span>(1 replies)</span></div>
+
+								</div>
+
+							</li>
+
+							<li class="widget_post_bit">
+
+								<div class="smallavatartext widget_post_comment">
+
+									<div class="meta_date">1 Day Ago</div>
+									<h5 class="widget_post_header"><a href="#" class="title">Layout container height issue</a></h5>
+									<p class="widget_post_content">If you look at the right sidebar content you will see it is overflowing. Unless I specify a height this...</p>
+									<div class="meta">Last Post By <a href="#">PP</a> <span>(23 replies)</span></div>
+
+								</div>
+
+							</li>
+
+							<li class="widget_post_bit">
+
+								<div class="smallavatartext widget_post_comment">
+
+									<div class="meta_date">6 Weeks Ago</div>
+									<h5 class="widget_post_header"><a href="#" class="title">Strange issue with swf files</a></h5>
+									<p class="widget_post_content">I'm a graphic designer, and a client recently sent me some flash files to edit.</p>
+									<div class="meta">Last Post By <a href="#">LL</a> <span>(2 replies)</span></div>
+
+								</div>
+
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</li>
+
+			<li>
+
+				<div class="block smaller">
+
+					<div class="blockhead">
+						<a class="collapse" id="collapse_block_newthreads_1" href="#" title="Collapse/Expand"><img alt="" src="images/blockhead.png" id="collapseimg_newthreads_1" /></a>
+						<span class="blocktitle">Forum Threads</span>
+					</div>
+
+					<div id="block_newthreads_1" class="widget_content blockbody">
+
+						<ul class="blockrow">
+							<li class="widget_post_bit">
+								<div class="smallavatartext widget_post_comment">
+
+									<div class="meta_date">3 Days Ago</div>
+									<h5 class="widget_post_header"><a href="#" class="title">How to do this emboss text effect?</a></h5>
+									<div class="meta">
+										in <a href="#">Photoshop Help</a><br />
+										Posted By <a href="#">EE</a> <span>(3 replies)</span>
+									</div>
+									
+								</div>
+							</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+			</li>
+
+			<li>
+
+				<div class="block smaller">
+
+					<div class="blockhead">
+						<a class="collapse" id="collapse_block_newposts_2" href="#" title="Collapse/Expand"><img alt="" src="images/blockhead.png" id="collapseimg_newposts_2"/></a>
+						<span class="blocktitle">New Forum Posts</span>
+					</div>
+
+					<div id="block_newposts_2" class="widget_content blockbody">
+
+						<ul class="blockrow">
+
+							<li class="widget_post_bit">
+
+								<div class="smallavatartext">
+
+									<div class="meta_date">1 Minute Ago</div>
+									<h5 class="widget_post_header"><a href="#" class="title">Custom viewfinder settings</a></h5>
+									<p class="widget_post_content">I can change the settings for the screen on the back of the camera - but these are not mirrored in the EVF.</p>
+
+								</div>
+
+							</li>
+
+							<li class="widget_post_bit">
+
+								<div class="smallavatartext">
+
+									<div class="meta_date">2 Hour Ago</div>
+									<h5 class="widget_post_header"><a href="#" class="title">Graphic navigation horizontal menu</a></h5>
+									<p class="widget_post_content">I have these graphics that have to be used for the navigation buttons which I have set up in CSS...</p>
+
+								</div>
+
+							</li>
+
+							<li class="widget_post_bit">
+
+								<div class="smallavatartext">
+
+									<div class="meta_date">7 Day Ago</div>
+									<h5 class="widget_post_header"><a href="#" class="title">Problems in bright light</a></h5>
+									<p class="widget_post_content">I seem to have more trouble on bright days, than in low light situatio.</p>
+
+								</div>
+
+							</li>
+
+							<li class="widget_post_bit">
+
+								<div class="smallavatartext">
+
+									<div class="meta_date">1 Week Ago</div>
+									<h5 class="widget_post_header"><a href="#" class="title">Does a 16GB compared to a 8GB card slows down the camera?</a></h5>
+									<p class="widget_post_content">Having no experience yet, I was wondering if a 16GB card could possibly slow down the camera. I am talking about fast cards...</p>
+
+								</div>
+
+							</li>
+
+							<li class="widget_post_bit">
+
+								<div class="smallavatartext">
+
+									<div class="meta_date">2 Weeks Ago</div>
+									<h5 class="widget_post_header"><a href="#" class="title">Footer not sticking to bottom</a></h5>
+									<p class="widget_post_content">I've tried using sticky footer and it sticks underneath all content, but not to the bottom of the browse...</p>
+
+								</div>
+
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</li>
+
+			<li>
+
+				<div class="block smaller">
+
+					<div class="blockhead">
+
+						<a class="collapse" id="collapse_block_tagcloud_4" href="#" title="Collapse/Expand"><img alt="" src="images/blockhead.png" id="collapseimg_tagcloud_4"/></a>
+						<span class="blocktitle">Tag Cloud</span>
+
+					</div>
+
+					<div id="block_tagcloud_4" class="widget_content blockbody">
+					 <div class="blockrow">
+
+						<a href="#" class="tagcloudlink level1">advertising</a>
+						<a href="#" class="tagcloudlink level3">announcement</a>
+						<a href="#" class="tagcloudlink level2">block-level</a>
+						<a href="#" class="tagcloudlink level1">copyright</a>
+						<a href="#" class="tagcloudlink level3">font-family</a>
+						<a href="#" class="tagcloudlink level2">graphic</a>
+						<a href="#" class="tagcloudlink level5">html5</a>
+						<a href="#" class="tagcloudlink level1">inherit</a>
+						<a href="#" class="tagcloudlink level1">introduction</a>
+						<a href="#" class="tagcloudlink level1">javascript</a>
+						<a href="#" class="tagcloudlink level1">mine</a>
+						<a href="#" class="tagcloudlink level2">original</a>
+						<a href="#" class="tagcloudlink level5">Developers</a>
+						<a href="#" class="tagcloudlink level2">seo</a>
+						<a href="#" class="tagcloudlink level5">tags</a>
+
+					 </div>
+					</div>
+
+				</div>
+
+			</li>
+
+		</ul>
+
+	</div>
+
+	<div id="footer" class="floatcontainer footer">
+
+		<ul id="footer_links" class="footer_links">
+
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Admin</a></li>
+			<li><a href="#">Mod</a></li>
+			<li><a href="#">Archive</a></li>
+			<li><a href="#">Terms of Service</a></li>
+			<li><a href="#">Top</a></li>
+
+		</ul>
+
+	</div>
+
+</div>
+
+<div class="below_body">
+
+	<div id="footer_time" class="shade footer_time">The time now is <span class="time">07:43 PM</span>.</div>
+
+	<div id="footer_copyright" class="shade footer_copyright">
+		Made by team&reg; BPIT<br />
+		Copyright &copy;All rights reserved. 
+	</div>
+
+	<div id="footer_morecopyright" class="shade footer_morecopyright">
+		<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	</div>
+
+</div>
+
+</body>
+</html>
